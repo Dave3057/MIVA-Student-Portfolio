@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DAVID JESUTOMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="miva-badge">MIVA OPEN UNIVERSITY</span>
+            <h1>DAVID JESUTOMI</h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+            <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
+            <a href="planner.html"><i class="fas fa-calendar-check"></i> Academic Planner</a>
+            <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <h2><i class="fas fa-paper-plane icon-heading"></i> Direct Channel</h2>
+            <p class="subtitle">Send a secure message directly using the validated form inputs below.</p>
+            
+            <div id="formFeedback" class="feedback-box" style="display:none;"></div>
+            
+            <form id="contactForm" onsubmit="validateForm(event)" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="e.g., Jane Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="e.g., student@miva.edu.ng">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="e.g., 08012345678 (Digits only)">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Enter your inquiry or message here..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DAVID JESUTOMI | MIVA Open University. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

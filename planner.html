@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | DAVID JESUTOMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="miva-badge">MIVA OPEN UNIVERSITY</span>
+            <h1>DAVID JESUTOMI</h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+            <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
+            <a href="planner.html" class="active"><i class="fas fa-calendar-check"></i> Academic Planner</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="planner-box">
+            <h2><i class="fas fa-tasks icon-heading"></i> Academic Activity Manager</h2>
+            <p class="subtitle">Streamline study objectives, security research milestones, and university deadlines in real-time.</p>
+            
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="e.g., Review COS 106 submission document...">
+                <button onclick="addTask()" class="btn btn-primary"><i class="fas fa-plus"></i> Add Task</button>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="task-table">
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Task Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskList">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DAVID JESUTOMI | MIVA Open University. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
